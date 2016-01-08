@@ -1,0 +1,22 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: text_input
+        BoxLayout:
+            size_hint: (0.2,1)
+            orientation: 'vertical'
+            Button:
+                text: 'Up'
+                on_press: app.up()
+            Button:
+                text:'Down'
+                on_press: app.down()
+    Button:
+        text: 'Convert m to km'
+        on_press: app.convert()
+    Label:
+        id: output_text
+        text: 'label'
+        color: (1, 1, 0, 1)
